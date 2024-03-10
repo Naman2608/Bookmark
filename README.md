@@ -8,7 +8,7 @@ json-server --watch --port 4000 ./_data/db.json
 ```
 ### Now Launch the App
 ```bash
-npm start
+npm run dev
 ```
 # For Development
 First, run the development server:

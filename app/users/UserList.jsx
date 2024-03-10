@@ -1,12 +1,18 @@
+import getData from "@/firebase/firestore/getData";
 
 async function getUsers() {
-    const res = await fetch('http://localhost:4000/users', {
-        next: {
-            revalidate: 0
-        }
-    })
+    // const res = await fetch('http://localhost:4000/users', {
+    //     next: {
+    //         revalidate: 0
+    //     }
+    // })
+    const { res, error } = await getData('users', 'user-id')
 
-    return res.json()
+    if (error) {
+        return console.log(error)
+    }
+    console.log(res);
+    return res;
 }
 export default async function UserList() {
 
