@@ -1,0 +1,9 @@
+18:00:14.557 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+18:00:14.735 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+18:00:50.214 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 86ms, init: 0ms
+18:00:50.300 [NamespaceSystem-blocking-namespace-operation-dispatcher-7] INFO com.firebase.core.namespace.StateManager - Namespace bookmark-001-default-rtdb status Active to Active
+18:02:01.374 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace bookmark-001, but the emulator is configured for bookmark-001-default-rtdb. To 
+opt-out of single project mode add/set the singleProjectMode: false property in 
+the firebase.json emulators config. 
+18:02:01.380 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001 successfully activated FBKV (SurveyIdle(0)) wait: 3ms, init: 0ms

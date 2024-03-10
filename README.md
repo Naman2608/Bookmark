@@ -1,14 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-# Try App
-### First Start json-server
+# Launch the App
 ```bash
-json-server --watch --port 4000 ./_data/db.json
-```
-### Now Launch the App
-```bash
-npm run dev
+npm i
+npm start
 ```
 # For Development
 First, run the development server:

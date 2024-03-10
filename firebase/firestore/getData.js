@@ -1,15 +1,23 @@
 import firebase_app from "../config";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
+import { getFirestore, getDocs, collection } from "firebase/firestore";
 
 const db = getFirestore(firebase_app)
-export default async function getData(collection, id) {
-    let docRef = doc(db, collection, id);
+export default async function getData(colllection) {
 
+
+    const querySnapshot = await getDocs(collection(db, colllection));
+
+    // Data Preview
+    querySnapshot.forEach((doc) => {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+    })
+        ;
     let result = null;
     let error = null;
 
     try {
-        result = await getDoc(docRef);
+        result = querySnapshot;
     } catch (e) {
         error = e;
     }

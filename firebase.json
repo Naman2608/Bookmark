@@ -22,24 +22,30 @@
     }
   ],
   "hosting": {
-    "public": "public",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "frameworksBackend": {
+      "region": "asia-east1"
+    }
   },
   "storage": {
     "rules": "storage.rules"
   },
   "emulators": {
-    "singleProjectMode": true
+    "singleProjectMode": true,
+    "functions": {
+      "port": 5011
+    },
+    "hosting": {
+      "port": 5010
+    },
+    "ui": {
+      "enabled": true
+    }
   },
   "remoteconfig": {
     "template": "remoteconfig.template.json"

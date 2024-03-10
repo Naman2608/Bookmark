@@ -6,12 +6,12 @@ async function getUsers() {
     //         revalidate: 0
     //     }
     // })
-    const { res, error } = await getData('users', 'user-id')
+    const { res, error } = await getData('users')
 
     if (error) {
         return console.log(error)
     }
-    console.log(res);
+
     return res;
 }
 export default async function UserList() {
@@ -20,7 +20,7 @@ export default async function UserList() {
 
     return (
         <>
-            {
+            {/* {
                 users.map((user) => (
                     <div key={user.id} className="card my-5">
                         <table>
@@ -39,7 +39,7 @@ export default async function UserList() {
                 <p className="text-center">
                     No User Found in Database
                 </p>
-            )}
+            )} */}
         </>
 
     )

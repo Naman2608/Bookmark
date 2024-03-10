@@ -2,18 +2,6 @@
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import addData from "@/firebase/firestore/addData";
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"
-// import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"
-// import { AuthUI } from "https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"
-
-// const appSettings = {
-//     databaseURL: "https://bookmark-001-default-rtdb.asia-southeast1.firebasedatabase.app/"
-// }
-
-// const app = initializeApp(appSettings)
-// const database = getDatabase(app)
-// // const listDBref = ref(database, "List")
-// const AsapListDBref = ref(database, "user")
 
 export default function CreateForm() {
 
@@ -35,15 +23,14 @@ export default function CreateForm() {
         //     body: JSON.stringify(newUser)
         // })
         // // console.log(res.status);
-        // if (res.status === 201) {
-        //     router.push('/users')
-        //     router.refresh()
-        // }
+
         const { res, error } = await addData('users', data)
 
         if (error) {
             return console.log(error)
         }
+        router.push('/users')
+        router.refresh()
         console.log(res);
     }
 
