@@ -3,16 +3,16 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <nav>
-            <h2>Nav Bar</h2>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/signin"}>Sign In</Link>
-            <Link href={"/signup"}>Sign Up</Link>
-            <Link href={"/admin"}>Admins</Link>
-            <Link href={"/users"}>Users</Link>
-            <Link href={"/users/create"}>Create User</Link>
-
-
-        </nav>
+        <div class="navbar">
+            <div class="button">
+                <Link class = "select button_link"  href={"/"}>Books</Link>
+            </div>
+            <div class="button">
+                <Link class = "button_link"  href={"/"}>Routines</Link>
+            </div>
+            <div class="button">
+                <Link class = "button_link"  href={"/"}>Shop</Link>
+            </div>
+        </div>
     )
 }

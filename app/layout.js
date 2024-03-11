@@ -1,7 +1,7 @@
 'use client'
-import './globals.css'
 import { Rubik } from 'next/font/google'
 import { AuthContextProvider } from '@/context/AuthContext'
+import './globals.css'
 
 // components 
 import Navbar from './components/Navbar'
@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
           {children}
         </AuthContextProvider>
         <Navbar />
-
       </body>
     </html>
   )

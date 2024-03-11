@@ -1,63 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+  font-family: 'Riforma';
+  src:  url('/Riforma.woff2') format('woff2')
+}
+* {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* base styles */
-body {
-  background: #ebf0fa;
-  @apply text-gray-500 m-8;
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  justify-content: center;
+  align-items: center;
 }
-
-h1,
-h2 {
-  @apply font-bold text-primary text-lg;
+.navbar .button {
+  display: flex;
+  align-items: center;
 }
-
-main {
-  @apply max-w-5xl my-12 mx-auto px-8;
+.selection:before {
+  content: "";
+  position: relative;
+  background: red;
+  width: 13px;
+  height: 13px;
+  top: -2px;
+  left: -5px;
+  border-radius: 10px;
 }
-
-main>h2 {
-  @apply mb-4 pb-2 text-base;
+.button {
+  color: ivory;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 11px 10px 10px 10px;
+  line-height: 1;
 }
-
-p>a {
-  @apply text-primary underline;
+.button:first-child {
+  text-align: right;
+  justify-content: right;
 }
-
-/* nav styles */
-nav {
-  @apply pb-4 border-b-2 border-gray-200 flex items-center gap-5 my-10 mx-auto max-w-5xl;
+.button:last-child {
+  text-align: left;
+  justify-content: left;
 }
-
-nav a,
-nav span {
-  @apply text-gray-500;
+.button .button_link {
+  padding: 5px 12px 3px 12px;
+  border-radius: 5px;
+  font-family: Riforma, sans-serif;
 }
-
-nav a:hover {
-  @apply text-black;
+.button .select {
+  background: #db1414;
 }
-
-main nav {
-  @apply border-0;
-}
-
-/* button styles */
-button {
-  @apply px-3 py-2 rounded-sm flex justify-between items-center gap-2 text-sm;
-}
-
-button:hover {
-  @apply bg-opacity-90;
-}
-
-.btn-primary {
-  @apply bg-primary text-white;
-}
-
-.btn-secondary {
-  @apply bg-gray-200 text-gray-900;
+.title {
+  margin: 20px 30px;
+  line-height: 1;
+  font-family: Riforma,sans-serif;
+  font-size: 40px;
 }
 
 /* form styles */
