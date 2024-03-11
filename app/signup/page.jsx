@@ -1,42 +1,90 @@
-'use client'
-import React from "react";
-import signUp from "@/firebase/auth/signUp";
+"use client"
+import { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import signUp from '@/firebase/auth/signUp';
 
-function Page() {
-    const [email, setEmail] = React.useState('')
-    const [password, setPassword] = React.useState('')
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
+
+const SignUp = () => {
+    const [email, setEmail] = useState("");
+    const [passwordOne, setPasswordOne] = useState("");
+    const [passwordTwo, setPasswordTwo] = useState("");
     const router = useRouter()
+    const [error, setError] = useState(null);
 
-    const handleForm = async (event) => {
-        event.preventDefault()
-
-        const { result, error } = await signUp(email, password);
-
-        if (error) {
-            return console.log(error)
-        }
-
-        // else successful
-        console.log(result)
-        return router.push("/admin")
-    }
-    return (<div className="wrapper">
-        <div className="form-wrapper">
-            <h1 className="mt-60 mb-30">Sign up</h1>
-            <form onSubmit={handleForm} className="form">
-                <label htmlFor="email">
-                    <p>Email</p>
-                    <input onChange={(e) => setEmail(e.target.value)} required type="email" name="email" id="email" placeholder="example@mail.com" />
-                </label>
-                <label htmlFor="password">
-                    <p>Password</p>
-                    <input onChange={(e) => setPassword(e.target.value)} required type="password" name="password" id="password" placeholder="password" />
-                </label>
-                <button type="submit">Sign up</button>
-            </form>
-        </div>
-    </div>);
+    const onSubmit = event => {
+        setError(null)
+        //check if passwords match. If they do, create user in Firebase
+        // and redirect to your logged in page.
+        if (passwordOne === passwordTwo)
+            // createUserWithEmailAndPassword(email: string, passwordOne: string)
+            signUp(email, passwordOne)
+                .then(authUser => {
+                    console.log("Success. The user is created in Firebase")
+                    router.push("/");
+                })
+                .catch(error => {
+                    // An error occurred. Set error message to be displayed to user
+                    setError(error.message)
+                });
+        else
+            setError("Password do not match")
+        event.preventDefault();
+    };
+    return (
+        <Container className="text-center custom-container">
+            <Row>
+                <Col>
+                    <Form
+                        className="custom-form"
+                        onSubmit={onSubmit}>
+                        {error && <Alert color="danger">{error}</Alert>}
+                        <FormGroup row>
+                            <Label for="signUpEmail" sm={4}>Email</Label>
+                            <Col sm={8}>
+                                <Input
+                                    type="email"
+                                    value={email}
+                                    onChange={(event) => setEmail(event.target.value)}
+                                    name="email"
+                                    id="signUpEmail"
+                                    placeholder="Email" />
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row>
+                            <Label for="signUpPassword" sm={4}>Password</Label>
+                            <Col sm={8}>
+                                <Input
+                                    type="password"
+                                    name="passwordOne"
+                                    value={passwordOne}
+                                    onChange={(event) => setPasswordOne(event.target.value)}
+                                    id="signUpPassword"
+                                    placeholder="Password" />
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row>
+                            <Label for="signUpPassword2" sm={4}>Confirm Password</Label>
+                            <Col sm={8}>
+                                <Input
+                                    type="password"
+                                    name="password"
+                                    value={passwordTwo}
+                                    onChange={(event) => setPasswordTwo(event.target.value)}
+                                    id="signUpPassword2"
+                                    placeholder="Password" />
+                            </Col>
+                        </FormGroup>
+                        <FormGroup row>
+                            <Col>
+                                <Button>Sign Up</Button>
+                            </Col>
+                        </FormGroup>
+                    </Form>
+                </Col>
+            </Row>
+        </Container>
+    )
 }
 
-export default Page;
+export default SignUp;

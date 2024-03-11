@@ -1,10 +1,10 @@
 'use client'
 import { Rubik } from 'next/font/google'
-import { AuthContextProvider } from '@/context/AuthContext'
+import { AuthContextProvider } from '../context/AuthContext'
 import './globals.css'
+import Navbar from './components/Navbar'
 
 // components 
-import Navbar from './components/Navbar'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <AuthContextProvider>
+          <Navbar />
           {children}
         </AuthContextProvider>
-        <Navbar />
       </body>
     </html>
   )

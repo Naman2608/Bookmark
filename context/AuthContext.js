@@ -1,38 +1,40 @@
-import React from 'react';
+import { useContext, createContext, useState, useEffect } from "react";
 import {
+    signInWithPopup,
+    signOut,
     onAuthStateChanged,
-    getAuth,
-} from 'firebase/auth';
-import firebase_app from '@/firebase/config';
+    GoogleAuthProvider,
+} from "firebase/auth";
+import { auth } from "../firebase/config";
 
-const auth = getAuth(firebase_app);
+const AuthContext = createContext();
 
-export const AuthContext = React.createContext({});
+export const AuthContextProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
 
-export const useAuthContext = () => React.useContext(AuthContext);
+    const googleSignIn = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider);
+    };
 
-export const AuthContextProvider = ({
-    children,
-}) => {
-    const [user, setUser] = React.useState(null);
-    const [loading, setLoading] = React.useState(true);
+    const logOut = () => {
+        signOut(auth);
+    };
 
-    React.useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-            } else {
-                setUser(null);
-            }
-            setLoading(false);
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
         });
-
         return () => unsubscribe();
-    }, []);
+    }, [user]);
 
     return (
-        <AuthContext.Provider value={{ user }}>
-            {loading ? <div>Loading...</div> : children}
+        <AuthContext.Provider value={{ user, googleSignIn, logOut }}>
+            {children}
         </AuthContext.Provider>
     );
+};
+
+export const UserAuth = () => {
+    return useContext(AuthContext);
 };
