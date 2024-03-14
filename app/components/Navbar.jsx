@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { UserAuth } from "@/context/AuthContext";
 import Spinner from "./Spinner";
@@ -29,6 +30,7 @@ const Navbar = () => {
       setLoading(false);
     };
     checkAuthentication();
+    console.log(user);
   }, [user]);
   return (
     <>
@@ -45,7 +47,14 @@ const Navbar = () => {
             </li>
           </ul>
         ) : (
-          <div>
+          <div className="header">
+            <Image
+              className="cursor-pointer"
+              src={user.photoURL}
+              width="48"
+              height="48"
+              alt="profile"
+            ></Image>
             <p>Welcome, {user.displayName}</p>
             <p className="cursor-pointer" onClick={handleSignOut}>
               Sign out
@@ -55,18 +64,18 @@ const Navbar = () => {
       </div>
       <div className="navbar">
         <div className="button">
-          <Link className="select button_link" href={"/books"}>
+          <Link className="select button_link" href={"/"}>
+            Home
+          </Link>
+        </div>
+        <div className="notification button">
+          <Link className=" button_link" href={"/books"}>
             Books
           </Link>
         </div>
-        <div className="button">
-          <Link className="button_link" href={"/routines"}>
+        <div className="selection button">
+          <Link className=" button_link" href={"/routines"}>
             Routines
-          </Link>
-        </div>
-        <div className="button">
-          <Link className="button_link" href={"/shop"}>
-            Shop
           </Link>
         </div>
       </div>

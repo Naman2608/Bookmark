@@ -15,14 +15,7 @@ export default function AddBook() {
 
     const data = { bookName, totalPages };
 
-    // const res = await fetch('http://localhost:4000/users', {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(newUser)
-    // })
-    // // console.log(res.status);
-
-    const { res, error } = await addData("books", data);
+    const { res, error } = await addData("user/books/", data);
 
     if (error) {
       return console.log(error);
@@ -30,19 +23,6 @@ export default function AddBook() {
     router.push("/");
     router.refresh();
     console.log(res);
-  };
-  // Function to handle checkbox change
-  const handleDayChange = (event) => {
-    const day = parseInt(event.target.value);
-    if (selectedDays.includes(day)) {
-      // If the day is already selected, remove it
-      setSelectedDays(
-        selectedDays.filter((selectedDay) => selectedDay !== day)
-      );
-    } else {
-      // If the day is not selected, add it
-      setSelectedDays([...selectedDays, day]);
-    }
   };
 
   return (
