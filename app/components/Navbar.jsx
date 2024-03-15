@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { UserAuth } from "@/context/AuthContext";
 import Spinner from "./Spinner";
+import addData from "@/firebase/firestore/addData";
 
 const Navbar = () => {
   const { user, googleSignIn, logOut } = UserAuth();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleSignIn = async () => {
     try {
@@ -30,7 +31,23 @@ const Navbar = () => {
       setLoading(false);
     };
     checkAuthentication();
-    console.log(user);
+  }, [user]);
+
+  useMemo(() => {
+    if (user) {
+      const userId = user.uid;
+      const userName = user.displayName;
+      const userEmail = user.email;
+      const userData = {
+        userId,
+        userEmail,
+        userName,
+      };
+      const { res, error } = addData("users", userData);
+      if (error) {
+        return console.log(error);
+      }
+    }
   }, [user]);
   return (
     <>
