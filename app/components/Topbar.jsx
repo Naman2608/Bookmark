@@ -51,17 +51,18 @@ const Topbar = () => {
     return (
         <>
             <div className="top-bar">
+                <h1 class="top-bar-title">THE BOOKMARK</h1>
                 {loading ? (
                     <Spinner />
                 ) : !user ? (
-                    <ul className="flex">
-                        <li onClick={handleSignIn} className="p-2 cursor-pointer">
+                    <div className="login-signup">
+                        <span onClick={handleSignIn} className="login">
                             Login
-                        </li>
-                        <li onClick={handleSignIn} className="p-2 cursor-pointer">
+                        </span>
+                        <span onClick={handleSignIn} className="signup">
                             Sign up
-                        </li>
-                    </ul>
+                        </span>
+                    </div>
                 ) : (
                     <div className="header">
                         <Image
@@ -72,10 +73,12 @@ const Topbar = () => {
                             alt="profile"
                         ></Image>
                         <div class="accounts">
-                            <p>{user.displayName}</p>
-                            <p className="Sign Out  " onClick={handleSignOut}>
+                            <div class="name">{user.displayName}</div>
+                            <div className="accounts_item" onClick={handleSignOut}>
                                 Sign out
-                            </p>
+                            </div>
+                            <div class="accounts_item">About</div>
+                            <div class="accounts_item">Preferences</div>
                         </div>
                     </div>
                 )}
