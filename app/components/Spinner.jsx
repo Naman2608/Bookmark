@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import loader from "./spinner.gif";
+// import loader from "./spinner.gif";
 
 const Spinner = () => {
   return (

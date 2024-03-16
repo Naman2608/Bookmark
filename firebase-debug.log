@@ -1,0 +1,934 @@
+[debug] [2024-03-16T03:28:26.975Z] ----------------------------------------------------------------------
+[debug] [2024-03-16T03:28:26.977Z] Command:       /home/naman/.nvm/versions/node/v20.11.1/bin/node /home/naman/.nvm/versions/node/v20.11.1/bin/firebase emulators:start
+[debug] [2024-03-16T03:28:26.977Z] CLI Version:   13.4.1
+[debug] [2024-03-16T03:28:26.977Z] Platform:      linux
+[debug] [2024-03-16T03:28:26.977Z] Node Version:  v20.11.1
+[debug] [2024-03-16T03:28:26.977Z] Time:          Sat Mar 16 2024 08:58:26 GMT+0530 (India Standard Time)
+[debug] [2024-03-16T03:28:26.978Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-16T03:28:27.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-16T03:28:27.065Z] > authorizing via signed-in user (namanchhabra260801@gmail.com)
+[debug] [2024-03-16T03:28:27.960Z] openjdk version "17.0.10" 2024-01-16
+
+[debug] [2024-03-16T03:28:27.962Z] OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.10+7-Ubuntu-122.04.1, mixed mode, sharing)
+
+[debug] [2024-03-16T03:28:28.006Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, hosting, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, hosting, storage, extensions"}}
+[debug] [2024-03-16T03:28:28.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 [none]
+[debug] [2024-03-16T03:28:28.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 200
+[debug] [2024-03-16T03:28:28.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 {"projectId":"bookmark-001","projectNumber":"245160173653","displayName":"Bookmark","name":"projects/bookmark-001","resources":{"hostingSite":"bookmark-001","realtimeDatabaseInstance":"bookmark-001-default-rtdb","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_0a165e62-e49e-46fb-87e0-8fbc292071a5"}
+[debug] [2024-03-16T03:28:28.851Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.852Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:28:28.853Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5010}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-03-16T03:28:28.862Z] [hub] writing locator at /tmp/hub-bookmark-001.json
+[debug] [2024-03-16T03:28:28.867Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 [none]
+[debug] [2024-03-16T03:28:29.264Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 200
+[debug] [2024-03-16T03:28:29.264Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 {"projectId":"bookmark-001","projectNumber":"245160173653","displayName":"Bookmark","name":"projects/bookmark-001","resources":{"hostingSite":"bookmark-001","realtimeDatabaseInstance":"bookmark-001-default-rtdb","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_0a165e62-e49e-46fb-87e0-8fbc292071a5"}
+[debug] [2024-03-16T03:28:32.313Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites pageToken=&pageSize=10
+[debug] [2024-03-16T03:28:33.948Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites 200
+[debug] [2024-03-16T03:28:33.948Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites {"sites":[{"name":"projects/bookmark-001/sites/bookmark-001","defaultUrl":"https://bookmark-001.web.app","appId":"1:245160173653:web:8f3b55d270a2dcbc05f4dc","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-16T03:28:33.950Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config [none]
+[debug] [2024-03-16T03:28:35.375Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config 200
+[debug] [2024-03-16T03:28:35.375Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config {"projectId":"bookmark-001","appId":"1:245160173653:web:8f3b55d270a2dcbc05f4dc","databaseURL":"https://bookmark-001-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBqcEvDUg4R-j7A2j5_gcIKeRCgOHFLZRU","authDomain":"bookmark-001.firebaseapp.com","messagingSenderId":"245160173653","measurementId":"G-MJMDFXFDL0"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-16T03:29:30.251Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      },
+      "site": "bookmark-001",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrbookmark001",
+            "region": "asia-east1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJlbXVsYXRvckhvc3RzIjp7ImF1dGgiOiIxMjcuMC4wLjE6OTA5OSIsImZpcmVzdG9yZSI6IjEyNy4wLjAuMTo4MDgwIiwiZGF0YWJhc2UiOiIxMjcuMC4wLjE6OTAwMCIsInN0b3JhZ2UiOiIxMjcuMC4wLjE6OTE5OSJ9LCJjb25maWciOnsicHJvamVjdElkIjoiYm9va21hcmstMDAxIiwiYXBwSWQiOiIxOjI0NTE2MDE3MzY1Mzp3ZWI6OGYzYjU1ZDI3MGEyZGNiYzA1ZjRkYyIsImRhdGFiYXNlVVJMIjoiaHR0cHM6Ly9ib29rbWFyay0wMDEtZGVmYXVsdC1ydGRiLmFzaWEtc291dGhlYXN0MS5maXJlYmFzZWRhdGFiYXNlLmFwcCIsInN0b3JhZ2VCdWNrZXQiOiJib29rbWFyay0wMDEuYXBwc3BvdC5jb20iLCJsb2NhdGlvbklkIjoiYXNpYS1zb3V0aDEiLCJhcGlLZXkiOiJBSXphU3lCcWNFdkRVZzRSLWo3QTJqNV9nY0lLZVJDZ09IRkxaUlUiLCJhdXRoRG9tYWluIjoiYm9va21hcmstMDAxLmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiMjQ1MTYwMTczNjUzIiwibWVhc3VyZW1lbnRJZCI6IkctTUpNREZYRkRMMCJ9LCJfYXV0aFRva2VuU3luY1VSTCI6Ii9fX3Nlc3Npb24ifQ; SameSite=Strict; Expires=2026-02-08T14:09:30.251Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "public": ".firebase/bookmark-001/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    },
+    {
+      "source": ".firebase/bookmark-001/functions",
+      "codebase": "firebase-frameworks-bookmark-001"
+    }
+  ]
+}
+[debug] [2024-03-16T03:29:30.256Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2024-03-16T03:29:30.258Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:29:30.258Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-16T03:29:30.258Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5010}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5011}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mpubsub\u001b[22m"}}
+[debug] [2024-03-16T03:29:30.262Z] defaultcredentials: writing to file /home/naman/.config/firebase/namanchhabra260801_gmail_com_application_default_credentials.json
+[debug] [2024-03-16T03:29:30.287Z] Setting GAC to /home/naman/.config/firebase/namanchhabra260801_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/naman/.config/firebase/namanchhabra260801_gmail_com_application_default_credentials.json"}}
+[debug] [2024-03-16T03:29:30.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/adminSdkConfig [none]
+[debug] [2024-03-16T03:29:31.593Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/adminSdkConfig 200
+[debug] [2024-03-16T03:29:31.594Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/adminSdkConfig {"projectId":"bookmark-001","databaseURL":"https://bookmark-001-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1"}
+[debug] [2024-03-16T03:29:33.205Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-16T03:29:33.205Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-03-16T03:29:33.205Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/naman/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","bookmark-001","--rules","/home/naman/direction/bookmark/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5011"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/naman/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"bookmark-001\",\"--rules\",\"/home/naman/direction/bookmark/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5011\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-03-16T03:29:39.473Z] Mar 16, 2024 8:59:39 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 8:59:39 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2024-03-16T03:29:39.612Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-03-16T03:29:39.612Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-03-16T03:29:39.739Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 [none]
+[debug] [2024-03-16T03:29:40.409Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 200
+[debug] [2024-03-16T03:29:40.409Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001 {"projectId":"bookmark-001","projectNumber":"245160173653","displayName":"Bookmark","name":"projects/bookmark-001","resources":{"hostingSite":"bookmark-001","realtimeDatabaseInstance":"bookmark-001-default-rtdb","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_0a165e62-e49e-46fb-87e0-8fbc292071a5"}
+[debug] [2024-03-16T03:29:40.411Z] database rules config:  [{"instance":"bookmark-001-default-rtdb","rules":"/home/naman/direction/bookmark/database.rules.json"}]
+[debug] [2024-03-16T03:29:40.419Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-03-16T03:29:40.420Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-16T03:29:40.420Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-03-16T03:29:40.420Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/home/naman/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5011],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/home/naman/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5011],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-03-16T03:29:42.994Z] 08:59:42.992 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"08:59:42.992 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2024-03-16T03:29:43.483Z] 08:59:43.482 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"08:59:43.482 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000\n"}}
+[debug] [2024-03-16T03:29:49.388Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-03-16T03:29:51.339Z] Temp file directory for storage emulator: /tmp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /tmp/firebase/storage/blobs"}}
+[debug] [2024-03-16T03:29:51.343Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites 
+[debug] [2024-03-16T03:29:52.552Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites 200
+[debug] [2024-03-16T03:29:52.553Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookmark-001/sites {"sites":[{"name":"projects/bookmark-001/sites/bookmark-001","defaultUrl":"https://bookmark-001.web.app","appId":"1:245160173653:web:8f3b55d270a2dcbc05f4dc","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-16T03:29:52.553Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config [none]
+[debug] [2024-03-16T03:29:54.022Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config 200
+[debug] [2024-03-16T03:29:54.022Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookmark-001/webApps/1:245160173653:web:8f3b55d270a2dcbc05f4dc/config {"projectId":"bookmark-001","appId":"1:245160173653:web:8f3b55d270a2dcbc05f4dc","databaseURL":"https://bookmark-001-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"bookmark-001.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBqcEvDUg4R-j7A2j5_gcIKeRCgOHFLZRU","authDomain":"bookmark-001.firebaseapp.com","messagingSenderId":"245160173653","measurementId":"G-MJMDFXFDL0"}
+[info] i  hosting[bookmark-001]: Serving hosting files from: .firebase/bookmark-001/hosting {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m.firebase/bookmark-001/hosting\u001b[22m"}}
+[info] ✔  hosting[bookmark-001]: Local server: http://127.0.0.1:5010 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5010\u001b[22m\u001b[24m"}}
+[debug] [2024-03-16T03:29:54.489Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-16T03:29:54.489Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-03-16T03:29:54.490Z] Starting Emulator UI with command {"binary":"node","args":["/home/naman/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/naman/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-03-16T03:29:54.609Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-03-16T03:29:54.609Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[debug] [2024-03-16T03:29:54.757Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/home/naman/direction/bookmark/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/naman/direction/bookmark/functions\" for Cloud Functions..."}}
+[debug] [2024-03-16T03:29:54.760Z] Validating nodejs source
+[debug] [2024-03-16T03:29:55.874Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-16T03:29:55.874Z] Building nodejs source
+[debug] [2024-03-16T03:29:55.874Z] Failed to find version of module node: reached end of search path /home/naman/direction/bookmark/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-03-16T03:29:55.876Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-16T03:29:55.908Z] Found firebase-functions binary at '/home/naman/direction/bookmark/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8127
+
+[debug] [2024-03-16T03:29:57.738Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5011/bookmark-001/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5011/bookmark-001/us-central1/helloWorld)."}}
+[info] i  functions: Watching "/home/naman/direction/bookmark/.firebase/bookmark-001/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/naman/direction/bookmark/.firebase/bookmark-001/functions\" for Cloud Functions..."}}
+[debug] [2024-03-16T03:30:02.773Z] Validating nodejs source
+[debug] [2024-03-16T03:30:03.358Z] > [functions] package.json contents: {
+  "main": "server.js",
+  "dependencies": {
+    "firebase-frameworks": "^0.11.0",
+    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^11.11.1"
+  },
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2024-03-16T03:30:03.358Z] Building nodejs source
+[debug] [2024-03-16T03:30:03.358Z] Failed to find version of module node: reached end of search path /home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules
+[info] ✔  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-16T03:30:03.367Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-16T03:30:03.368Z] Found firebase-functions binary at '/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8716
+
+[debug] [2024-03-16T03:30:03.565Z] Got response from /__/functions.yaml {"endpoints":{"ssrbookmark001":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-east1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrbookmark001"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: ssrbookmark001. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ssrbookmark001."}}
+[info] ✔  functions[asia-east1-ssrbookmark001]: http function initialized (http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001)."}}
+[debug] [2024-03-16T03:30:08.580Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=bookmark-001-default-rtdb
+[debug] [2024-03-16T03:30:08.580Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2023-10-8\n    \".write\": true,  // 2023-10-8\n  }\n}"
+[debug] [2024-03-16T03:30:09.739Z] 09:00:09.739 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 507ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"09:00:09.739 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 507ms, init: 0ms\n"}}
+[debug] [2024-03-16T03:30:09.857Z] 09:00:09.857 [NamespaceSystem-blocking-namespace-operation-dispatcher-7] INFO com.firebase.core.namespace.StateManager - Namespace bookmark-001-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"09:00:09.857 [NamespaceSystem-blocking-namespace-operation-dispatcher-7] INFO com.firebase.core.namespace.StateManager - Namespace bookmark-001-default-rtdb status Active to Active\n"}}
+[debug] [2024-03-16T03:30:09.936Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
+[debug] [2024-03-16T03:30:09.936Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5011 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Database       │ 127.0.0.1:9000 │ http://127.0.0.1:4000/database   │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5010 │ n/a                              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5011 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/media/c22ccc5eb58b83e1-s.p.woff2 HTTP/1.1" 200 35320 "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/media/c22ccc5eb58b83e1-s.p.woff2 HTTP/1.1\" 200 35320 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/css/699505326ff02ce9.css HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/css/699505326ff02ce9.css HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/webpack-ba6f2e3d87b4577c.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/webpack-ba6f2e3d87b4577c.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/main-app-a2ebde6810485c00.js HTTP/1.1" 200 462 "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/main-app-a2ebde6810485c00.js HTTP/1.1\" 200 462 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/69-9c3c64001cadfd4c.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/69-9c3c64001cadfd4c.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/839-981fd4a43cc77841.js HTTP/1.1" 200 672 "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/839-981fd4a43cc77841.js HTTP/1.1\" 200 672 \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/6b187784-58c485f29d9121ee.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/6b187784-58c485f29d9121ee.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/fd9d1056-534a3af521b04580.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/fd9d1056-534a3af521b04580.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/300-d16a1e9f18343ff8.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/300-d16a1e9f18343ff8.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/520-04039090a546a431.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/520-04039090a546a431.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /_next/static/chunks/app/layout-76640f1a6018e1f2.js HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /_next/static/chunks/app/layout-76640f1a6018e1f2.js HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:48 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /signin?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /signin?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /signup?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /signup?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /admin?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /admin?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /users?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /users?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] "GET /users/create?_rsc=acgkz HTTP/1.1" 200 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:30:50 +0000] \"GET /users/create?_rsc=acgkz HTTP/1.1\" 200 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] [hosting] Rewriting /__session to http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001 for local Function asia-east1/ssrbookmark001
+[debug] [2024-03-16T03:31:02.680Z] >>> [apiv2][query] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session 
+[debug] [2024-03-16T03:31:02.680Z] >>> [apiv2][body] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session [stream]
+[debug] [2024-03-16T03:31:02.715Z] [work-queue] {"queuedWork":["/bookmark-001/asia-east1/ssrbookmark001/__session-2024-03-16T03:31:02.715Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-16T03:31:02.715Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/bookmark-001/asia-east1/ssrbookmark001/__session-2024-03-16T03:31:02.715Z"],"workRunningCount":1}
+[debug] [2024-03-16T03:31:02.716Z] Accepted request DELETE /bookmark-001/asia-east1/ssrbookmark001/__session --> asia-east1-ssrbookmark001
+[debug] [2024-03-16T03:31:02.718Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-16T03:31:02.718Z] [functions] Got req.url=/bookmark-001/asia-east1/ssrbookmark001/__session, mapping to path=/__session {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/bookmark-001/asia-east1/ssrbookmark001/__session, mapping to path=/__session"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-16T03:31:02.749Z] [worker-pool] addWorker(asia-east1-ssrbookmark001) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-east1-ssrbookmark001)"}}
+[debug] [2024-03-16T03:31:02.750Z] [worker-pool] Adding worker with key asia-east1-ssrbookmark001, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-east1-ssrbookmark001, total=1"}}
+[debug] [2024-03-16T03:31:04.077Z] [runtime-status] [11600] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.078Z] [runtime-status] [11600] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.079Z] [runtime-status] [11600] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-16T03:31:04.079Z] [runtime-status] [11600] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.150Z] [runtime-status] [11600] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-16T03:31:04.151Z] [runtime-status] [11600] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-16T03:31:04.151Z] [runtime-status] [11600] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.151Z] [runtime-status] [11600] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.152Z] [runtime-status] [11600] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-16T03:31:04.152Z] [runtime-status] [11600] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-16T03:31:04.162Z] [runtime-status] [11600] Functions runtime initialized. {"cwd":"/home/naman/direction/bookmark/.firebase/bookmark-001/functions","node_version":"20.11.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Functions runtime initialized. {\"cwd\":\"/home/naman/direction/bookmark/.firebase/bookmark-001/functions\",\"node_version\":\"20.11.1\"}"}}
+[debug] [2024-03-16T03:31:04.163Z] [runtime-status] [11600] Listening to port: /tmp/fire_emu_7b6e90964958ea08.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[runtime-status] [11600] Listening to port: /tmp/fire_emu_7b6e90964958ea08.sock"}}
+[debug] [2024-03-16T03:31:04.178Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE"}}
+[debug] [2024-03-16T03:31:04.178Z] [worker-pool] submitRequest(triggerId=asia-east1-ssrbookmark001) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-east1-ssrbookmark001)"}}
+[info] i  functions: Beginning execution of "asia-east1-ssrbookmark001" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Beginning execution of \"asia-east1-ssrbookmark001\""}}
+[debug] [2024-03-16T03:31:04.179Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: BUSY"}}
+[debug] [2024-03-16T03:31:04.377Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-east1-ssrbookmark001" in 198.995076ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finished \"asia-east1-ssrbookmark001\" in 198.995076ms"}}
+[debug] [2024-03-16T03:31:04.378Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE"}}
+[debug] [2024-03-16T03:31:04.378Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-16T03:31:04.378Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-16T03:31:04.379Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-16T03:31:04.380Z] <<< [apiv2][status] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session 204
+[debug] [2024-03-16T03:31:04.380Z] <<< [apiv2][body] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:31:04 +0000] "DELETE /__session HTTP/1.1" 204 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:31:04 +0000] \"DELETE /__session HTTP/1.1\" 204 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[debug] [2024-03-16T03:31:33.202Z] Mar 16, 2024 9:01:33 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:33 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-16T03:31:33.231Z] 09:01:33.229 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace bookmark-001, but the emulator is configured for bookmark-001-default-rtdb. To 
+opt-out of single project mode add/set the singleProjectMode: false property in 
+the firebase.json emulators config. 
+ {"metadata":{"emulator":{"name":"database"},"message":"09:01:33.229 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested \nnamespace bookmark-001, but the emulator is configured for bookmark-001-default-rtdb. To \nopt-out of single project mode add/set the singleProjectMode: false property in \nthe firebase.json emulators config. \n"}}
+[debug] [2024-03-16T03:31:33.252Z] 09:01:33.251 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001 successfully activated FBKV (SurveyIdle(0)) wait: 12ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"09:01:33.251 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - bookmark-001 successfully activated FBKV (SurveyIdle(0)) wait: 12ms, init: 0ms\n"}}
+[debug] [2024-03-16T03:31:33.813Z] Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2024-03-16T03:31:33.813Z] Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2024-03-16T03:31:33.815Z] Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2024-03-16T03:31:34.114Z] Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-16T03:31:34.122Z] Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-16T03:31:34.131Z] Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:34 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-16T03:31:36.412Z] Mar 16, 2024 9:01:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:31:53 +0000] "GET / HTTP/1.1" - - "http://127.0.0.1:4000/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:31:53 +0000] \"GET / HTTP/1.1\" - - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:31:53 +0000] "GET /_next/static/media/c22ccc5eb58b83e1-s.p.woff2 HTTP/1.1" - - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:31:53 +0000] \"GET /_next/static/media/c22ccc5eb58b83e1-s.p.woff2 HTTP/1.1\" - - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[info] [hosting] Rewriting /__session to http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001 for local Function asia-east1/ssrbookmark001
+[debug] [2024-03-16T03:31:54.499Z] >>> [apiv2][query] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session 
+[debug] [2024-03-16T03:31:54.499Z] >>> [apiv2][body] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session [stream]
+[debug] [2024-03-16T03:31:54.501Z] [work-queue] {"queuedWork":["/bookmark-001/asia-east1/ssrbookmark001/__session-2024-03-16T03:31:54.501Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-16T03:31:54.502Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/bookmark-001/asia-east1/ssrbookmark001/__session-2024-03-16T03:31:54.501Z"],"workRunningCount":1}
+[debug] [2024-03-16T03:31:54.502Z] Accepted request DELETE /bookmark-001/asia-east1/ssrbookmark001/__session --> asia-east1-ssrbookmark001
+[debug] [2024-03-16T03:31:54.504Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-16T03:31:54.504Z] [functions] Got req.url=/bookmark-001/asia-east1/ssrbookmark001/__session, mapping to path=/__session {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/bookmark-001/asia-east1/ssrbookmark001/__session, mapping to path=/__session"}}
+[debug] [2024-03-16T03:31:54.504Z] [worker-pool] submitRequest(triggerId=asia-east1-ssrbookmark001) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-east1-ssrbookmark001)"}}
+[info] i  functions: Beginning execution of "asia-east1-ssrbookmark001" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Beginning execution of \"asia-east1-ssrbookmark001\""}}
+[debug] [2024-03-16T03:31:54.504Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: BUSY"}}
+[debug] [2024-03-16T03:31:54.508Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "asia-east1-ssrbookmark001" in 3.546585ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finished \"asia-east1-ssrbookmark001\" in 3.546585ms"}}
+[debug] [2024-03-16T03:31:54.508Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: IDLE"}}
+[debug] [2024-03-16T03:31:54.508Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-16T03:31:54.508Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-16T03:31:54.508Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-16T03:31:54.509Z] <<< [apiv2][status] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session 204
+[debug] [2024-03-16T03:31:54.509Z] <<< [apiv2][body] DELETE http://127.0.0.1:5011/bookmark-001/asia-east1/ssrbookmark001/__session [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Mar/2024:03:31:54 +0000] "DELETE /__session HTTP/1.1" 204 - "http://127.0.0.1:5010/" "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Mar/2024:03:31:54 +0000] \"DELETE /__session HTTP/1.1\" 204 - \"http://127.0.0.1:5010/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0\""}}
+[debug] [2024-03-16T03:31:58.577Z] Mar 16, 2024 9:01:58 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:58 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2024-03-16T03:31:59.418Z] Mar 16, 2024 9:01:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2024-03-16T03:31:59.970Z] Mar 16, 2024 9:01:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:01:59 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2024-03-16T03:32:00.529Z] Mar 16, 2024 9:02:00 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 16, 2024 9:02:00 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2024-03-16T03:35:28.016Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2024-03-16T03:35:28.025Z] Received signal SIGTERM 1
+[info]  
+[info] i  emulators: Received SIGTERM for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGTERM signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  extensions: Stopping Extensions Emulator {"metadata":{"emulator":{"name":"extensions"},"message":"Stopping Extensions Emulator"}}
+[debug] [2024-03-16T03:35:28.042Z] [Extensions] Stopping Extensions emulator, this is a noop.
+[info] i  extensions: Stopping Extensions Emulator {"metadata":{"emulator":{"name":"extensions"},"message":"Stopping Extensions Emulator"}}
+[debug] [2024-03-16T03:35:28.043Z] [Extensions] Stopping Extensions emulator, this is a noop.
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2024-03-16T03:35:28.048Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: exited"}}
+[debug] [2024-03-16T03:35:28.049Z] [worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-east1-ssrbookmark001"},"extension":{},"message":"[worker-asia-east1-ssrbookmark001-b6b1e527-8745-4485-98d7-7f1f807a2040]: FINISHED"}}
+[debug] [2024-03-16T03:35:28.050Z] 09:05:28.049 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"09:05:28.049 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2024-03-16T03:35:28.058Z] 09:05:28.057 [NamespaceSystem-akka.actor.default-dispatcher-11] INFO com.firebase.core.namespace.Terminator$Terminator - 2 actors left to terminate: bookmark-001-default-rtdb, bookmark-001
+ {"metadata":{"emulator":{"name":"database"},"message":"09:05:28.057 [NamespaceSystem-akka.actor.default-dispatcher-11] INFO com.firebase.core.namespace.Terminator$Terminator - 2 actors left to terminate: bookmark-001-default-rtdb, bookmark-001\n"}}
+[debug] [2024-03-16T03:35:28.063Z] 09:05:28.062 [NamespaceSystem-akka.actor.default-dispatcher-11] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for bookmark-001-default-rtdb
+ {"metadata":{"emulator":{"name":"database"},"message":"09:05:28.062 [NamespaceSystem-akka.actor.default-dispatcher-11] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for bookmark-001-default-rtdb\n"}}
+[debug] [2024-03-16T03:35:28.063Z] 09:05:28.062 [NamespaceSystem-akka.actor.default-dispatcher-18] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for bookmark-001
+ {"metadata":{"emulator":{"name":"database"},"message":"09:05:28.062 [NamespaceSystem-akka.actor.default-dispatcher-18] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for bookmark-001\n"}}
+[debug] [2024-03-16T03:35:28.116Z] 09:05:28.115 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+ {"metadata":{"emulator":{"name":"database"},"message":"09:05:28.115 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.\n"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[debug] [2024-03-16T03:35:28.448Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:257:10)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as info] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:95:19)
+    at Object.logLabeledBullet (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/utils.js:102:26)
+    at EmulatorLogger.logLabeled (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/emulator/emulatorLogger.js:211:23)
+    at EmulatorRegistry.stop (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/emulator/registry.js:25:59)
+    at EmulatorRegistry.stopAll (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/emulator/registry.js:57:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.cleanShutdown (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/emulator/controller.js:66:5)
+    at async process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js:173:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.454Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.455Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.456Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.458Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.460Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.461Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.463Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.465Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.466Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.467Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.468Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.469Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-16T03:35:28.470Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:530:35)
+    at DerivedLogger.emit (node:domain:488:12)
+    at addChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at Readable.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at Transform.push (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:313:12)
+    at Transform._read (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at Transform._write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/logger.js:231:12)
+    at DerivedLogger.newLogFunc [as log] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logger.js:12:16)
+    at DerivedLogger.<computed> [as error] (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/create-logger.js:87:14)
+    at logError (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/logError.js:22:25)
+    at errorOut (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/errorOut.js:17:29)
+    at process.<anonymous> (/home/naman/.nvm/versions/node/v20.11.1/lib/node_modules/firebase-tools/lib/bin/firebase.js:124:29)
+    at process.emit (node:events:530:35)
+    at process._fatalException (node:internal/process/execution:178:25)

@@ -17,3 +17,19 @@ export default async function addData(colllection, data) {
 
     return { result, error };
 }
+
+export async function addDataWithId(colllection,id, data) {
+    let result = null;
+    let error = null;
+
+    try {
+        const newRef = doc(db,colllection,id);
+        result = await setDoc(newRef, data, {
+            merge: true,
+        }); 
+    } catch (e) {
+        error = e;
+    }
+
+    return { result, error };
+}
