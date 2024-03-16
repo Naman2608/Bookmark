@@ -2,47 +2,30 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import addData from "@/firebase/firestore/addData";
+import { UserAuth } from "@/context/AuthContext";
 
 export default function AddBook() {
   const router = useRouter();
+  const { user } = UserAuth();
+  const user_id = user.uid;
 
   // State variables to hold the form data
   const [bookName, setBookName] = useState("");
   const [totalPages, setTotalPages] = useState("");
+  const [author, setAuthor] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const data = { bookName, totalPages };
+    const data = { user_id, bookName, totalPages, author };
 
-    // const res = await fetch('http://localhost:4000/users', {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(newUser)
-    // })
-    // // console.log(res.status);
-
+    // Write book data
     const { res, error } = await addData("books", data);
-
     if (error) {
       return console.log(error);
     }
     router.push("/");
     router.refresh();
-    console.log(res);
-  };
-  // Function to handle checkbox change
-  const handleDayChange = (event) => {
-    const day = parseInt(event.target.value);
-    if (selectedDays.includes(day)) {
-      // If the day is already selected, remove it
-      setSelectedDays(
-        selectedDays.filter((selectedDay) => selectedDay !== day)
-      );
-    } else {
-      // If the day is not selected, add it
-      setSelectedDays([...selectedDays, day]);
-    }
   };
 
   return (
@@ -57,6 +40,18 @@ export default function AddBook() {
           name="bookName"
           value={bookName}
           onChange={(e) => setBookName(e.target.value)}
+        />
+        <br />
+        <br />
+
+        <label htmlFor="totalPages">Author:</label>
+        <br />
+        <input
+          type="text"
+          id="author"
+          name="author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
         />
         <br />
         <br />
