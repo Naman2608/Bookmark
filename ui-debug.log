@@ -1,27 +1,2 @@
 Web / API server started at 127.0.0.1:4000
 Web / API server started at ::1:4000
-
-  #  node[27896]: void node::ResetStdio() at ../src/node.cc:708
-  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
-
------ Native stack trace -----
-
- 1: 0xca5580 node::Abort() [node]
- 2: 0xca5600 node::errors::SetPrepareStackTraceCallback(v8::FunctionCallbackInfo<v8::Value> const&) [node]
- 3: 0xc59b44  [node]
- 4: 0xc59c5c node::SignalExit(int, siginfo_t*, void*) [node]
- 5: 0x7f9f54a42520  [/lib/x86_64-linux-gnu/libc.so.6]
- 6: 0x7f9f54b25b68 epoll_pwait [/lib/x86_64-linux-gnu/libc.so.6]
- 7: 0x189f636  [node]
- 8: 0x188bb77 uv_run [node]
- 9: 0xbbbb83 node::SpinEventLoopInternal(node::Environment*) [node]
-10: 0xcf4ee5  [node]
-11: 0xcf58ad node::NodeMainInstance::Run() [node]
-12: 0xc5f397 node::Start(int, char**) [node]
-13: 0x7f9f54a29d90  [/lib/x86_64-linux-gnu/libc.so.6]
-14: 0x7f9f54a29e40 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
-15: 0xbb8eee _start [node]
-FATAL ERROR: v8::HandleScope::CreateHandle() Cannot create a handle without a HandleScope
------ Native stack trace -----
-
- 1: 0xca5580 node::Abort() [node]

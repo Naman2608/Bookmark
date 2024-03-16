@@ -1,7 +1,6 @@
 "use client";
 import AddBook from "./AddBook";
 import { UserAuth } from "@/context/AuthContext";
-import Spinner from "../components/Spinner";
 import React, { useEffect, useState } from "react";
 
 export default function CreateUser() {
@@ -19,7 +18,7 @@ export default function CreateUser() {
   return (
     <main>
       {loading ? (
-        <Spinner />
+        <h1 className="loading">Loading...</h1>
       ) : user ? (
         <>
           <h1 className="text-enter">Books</h1>

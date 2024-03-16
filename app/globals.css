@@ -16,6 +16,7 @@
 }
 
 body {
+  position: relative;
   overflow: hidden;
   display: grid;
   height: 100vh;
@@ -27,11 +28,13 @@ body {
 @tailwind utilities;
 
 .navbar {
+  position: absolute;
   background: black;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   justify-content: center;
   align-items: center;
+  grid-row: 3;
 }
 
 .top-bar .top-bar-title {
@@ -132,6 +135,7 @@ main {
   display: flex;
   font-size: 16px;
   font-family: Riforma, sans-serif;
+  line-height: 1;
   color: #666666;
   align-items: center;
   text-transform: uppercase;
