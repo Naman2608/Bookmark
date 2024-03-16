@@ -25,19 +25,21 @@ const PreviewBooks = () => {
   useMemo(() => {
     fetchBooks(user);
   }, [user]);
-  console.log(books);
 
   const listItems = books.map((book) => (
-    <li key={book.id}>
-      <p>
-        <b>{book.bookName}</b>
-        {"  "}author: {" " + book.author + " "}
-        {"  "}pages: {book.totalPages}
-      </p>
-    </li>
+    <div className={"book_id"} key={book.id}>
+      <span className={"book_entity"}>
+        <span className={"book_name"}>{book.bookName}</span>
+        <span className={"author"}>
+          <span className={"by"}>by</span>
+          <span className={"author_name"}>{book.author}</span>
+        </span>
+        <span className={"total_pages"}>{book.totalPages} Pages</span>
+      </span>
+    </div>
   ));
   {
-    return <ul>{listItems}</ul>;
+    return <div className={"books_shelf"}>{listItems}</div>;
   }
 };
 

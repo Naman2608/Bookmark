@@ -25,7 +25,6 @@ export default function CreateUser() {
         <h1 className="loading">Loading...</h1>
       ) : user ? (
         <>
-          <h1 className="text-enter">Books</h1>
           {/* <Link href="/books/?addbook=1">ADD Books</Link> */}
           <PreviewBooks />
           <button onClick={() => setShowAddBookModal(true)}>Add Book</button>

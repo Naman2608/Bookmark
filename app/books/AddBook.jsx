@@ -69,7 +69,7 @@ export default function AddBook() {
         <br />
         <br />
 
-        <button className="btn-primary">Add Book</button>
+        <button className={"button"}>Add Book</button>
       </form>
     </>
   );

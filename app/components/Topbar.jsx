@@ -32,6 +32,11 @@ const Topbar = () => {
     checkAuthentication();
   }, [user]);
 
+  function showAccounts() {
+    let accounts = document.getElementById("accounts");
+    accounts.classList.toggle("accounts-visible");
+  }
+  
   function addUser() {
     if (user) {
       const userId = user.uid;
@@ -71,8 +76,9 @@ const Topbar = () => {
               width="36"
               height="36"
               alt="profile"
+              onClick={showAccounts}
             />
-            <div className="accounts">
+            <div className="accounts" id="accounts">
               <div className="name">{user.displayName}</div>
               <div className="accounts_item" onClick={handleSignOut}>
                 Sign out
