@@ -2,9 +2,9 @@
 import { useState, useMemo } from "react";
 import Flatpickr from "react-flatpickr";
 import "flatpickr/dist/themes/material_blue.css";
-import { UserAuth } from "@/context/AuthContext";
-import getData from "@/firebase/firestore/getData";
-import addData from "@/firebase/firestore/addData";
+import { UserAuth } from "/context/AuthContext";
+import getData from "/firebase/firestore/getData";
+import addData from "/firebase/firestore/addData";
 import { useRouter } from "next/navigation";
 
 const AddRoutine = () => {

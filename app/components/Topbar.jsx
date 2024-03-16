@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
-import { UserAuth } from "@/context/AuthContext";
-import addData from "@/firebase/firestore/addData";
+import { UserAuth } from "../../context/AuthContext";
+import { addDataWithId } from "/firebase/firestore/addData";
 
 const Topbar = () => {
   const { user, googleSignIn, logOut } = UserAuth();
@@ -27,11 +27,12 @@ const Topbar = () => {
     const checkAuthentication = async () => {
       await new Promise((resolve) => setTimeout(resolve, 50));
       setLoading(false);
+      addUser();
     };
     checkAuthentication();
   }, [user]);
 
-  useMemo(() => {
+  function addUser() {
     if (user) {
       const userId = user.uid;
       const userName = user.displayName;
@@ -41,12 +42,12 @@ const Topbar = () => {
         userEmail,
         userName,
       };
-      const { res, error } = addData("users", userData);
+      const { res, error } = addDataWithId("users", userId, userData);
       if (error) {
         return console.log(error);
       }
     }
-  }, [user]);
+  }
   return (
     <>
       <div className="top-bar">

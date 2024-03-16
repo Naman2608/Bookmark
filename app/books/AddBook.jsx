@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import addData from "@/firebase/firestore/addData";
-import { UserAuth } from "@/context/AuthContext";
+import addData from "/firebase/firestore/addData";
+import { UserAuth } from "/context/AuthContext";
 
 export default function AddBook() {
   const router = useRouter();

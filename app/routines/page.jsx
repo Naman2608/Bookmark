@@ -1,6 +1,6 @@
 "use client";
 import AddRoutine from "./AddRoutine";
-import { UserAuth } from "@/context/AuthContext";
+import { UserAuth } from "/context/AuthContext";
 import React, { useEffect, useState } from "react";
 
 export default function CreateUser() {
