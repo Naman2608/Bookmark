@@ -27,7 +27,7 @@ const Topbar = () => {
     const checkAuthentication = async () => {
       await new Promise((resolve) => setTimeout(resolve, 50));
       setLoading(false);
-      addUser();
+      addUser(user);
     };
     checkAuthentication();
   }, [user]);
@@ -36,8 +36,8 @@ const Topbar = () => {
     let accounts = document.getElementById("accounts");
     accounts.classList.toggle("accounts-visible");
   }
-  
-  function addUser() {
+
+  function addUser(user) {
     if (user) {
       const userId = user.uid;
       const userName = user.displayName;

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import signInWithGoogle from "@/firebase/auth/signIn";
+import signInWithGoogle from "/firebase/auth/signIn";
 import { useRouter } from "next/navigation";
 
 function Page() {
