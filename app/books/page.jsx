@@ -1,12 +1,11 @@
 "use client";
 import AddBook from "./AddBook";
-
 import { UserAuth } from "/context/AuthContext";
 import React, { useEffect, useState } from "react";
 import PreviewBooks from "./PreviewBooks";
 import Modal from "../components/Modal";
 
-export default function CreateUser() {
+export default function Book() {
   const { user } = UserAuth();
   const [loading, setLoading] = useState(true);
   const [showAddBookModal, setShowAddBookModal] = useState(false);
@@ -27,7 +26,12 @@ export default function CreateUser() {
         <>
           {/* <Link href="/books/?addbook=1">ADD Books</Link> */}
           <PreviewBooks />
-          <button onClick={() => setShowAddBookModal(true)}>Add Book</button>
+          <button
+            className="add_book_button"
+            onClick={() => setShowAddBookModal(true)}
+          >
+            Add Book
+          </button>
           {showAddBookModal ? (
             <Modal
               onClose={() => {

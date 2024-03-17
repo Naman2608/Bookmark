@@ -2,6 +2,7 @@ import React from "react";
 import getData from "/firebase/firestore/getData";
 import { useState, useMemo } from "react";
 import { UserAuth } from "/context/AuthContext";
+import deleteData from "/firebase/firestore/deleteData";
 
 const PreviewBooks = () => {
   const [books, setBooks] = useState([]);
@@ -36,6 +37,12 @@ const PreviewBooks = () => {
         </span>
         <span className={"total_pages"}>{book.totalPages} Pages</span>
       </span>
+      <button
+        className="single_book_delete_button"
+        onClick={() => deleteData("books", book.id)}
+      >
+        Delete
+      </button>
     </div>
   ));
   {

@@ -164,7 +164,7 @@ const AddRoutine = () => {
         />
         <br />
         <label htmlFor="timeRange">Time Range:</label>
-        <div>
+        <div required>
           <Flatpickr
             value={startTime}
             onChange={(selectedDates) => setStartTime(selectedDates[0])}
@@ -175,6 +175,7 @@ const AddRoutine = () => {
               time_24hr: false,
               enableSeconds: false,
               placeholder: "Select start time",
+              allowInput: true,
             }}
           />
           {" - "}
@@ -188,6 +189,7 @@ const AddRoutine = () => {
               time_24hr: false,
               enableSeconds: false,
               placeholder: "Select end time",
+              allowInput: true,
             }}
           />
         </div>
@@ -199,7 +201,6 @@ const AddRoutine = () => {
           value={activity}
           onChange={(e) => setActivity(e.target.value)}
           placeholder="Enter activity"
-          required
         />
         <br />
         <button type="submit">Add Routine</button>

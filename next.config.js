@@ -37,7 +37,8 @@ const CROSheaderConfig = {
       },
     ],
   },
-
+  
 }
+
 // module.exports = nextConfig
 module.exports = CROSheaderConfig

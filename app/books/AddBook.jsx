@@ -1,13 +1,13 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import addData from "/firebase/firestore/addData";
 import { UserAuth } from "/context/AuthContext";
 
 export default function AddBook() {
-  const router = useRouter();
   const { user } = UserAuth();
   const user_id = user.uid;
+  const router = useRouter();
 
   // State variables to hold the form data
   const [bookName, setBookName] = useState("");
@@ -24,20 +24,22 @@ export default function AddBook() {
     if (error) {
       return console.log(error);
     }
-    router.push("/");
-    router.refresh();
+    router.replace("/");
+    router.fastRefresh();
+    console.log(router);
   };
 
   return (
     <>
       <h2>Add Book</h2>
       <form onSubmit={handleSubmit} className="w-1/2">
-        <label htmlFor="bookName">Book Name:</label>
+        <label htmlFor="bookName">Book Name*:</label>
         <br />
         <input
           type="text"
           id="bookName"
           name="bookName"
+          required
           value={bookName}
           onChange={(e) => setBookName(e.target.value)}
         />
@@ -56,13 +58,14 @@ export default function AddBook() {
         <br />
         <br />
 
-        <label htmlFor="totalPages">Total Pages:</label>
+        <label htmlFor="totalPages">Total Pages*:</label>
         <br />
         <input
           type="number"
           id="totalPages"
           name="totalPages"
           min="1"
+          required
           value={totalPages}
           onChange={(e) => setTotalPages(e.target.value)}
         />

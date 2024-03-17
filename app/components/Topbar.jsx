@@ -72,6 +72,7 @@ const Topbar = () => {
           <div className="header">
             <Image
               className="cursor-pointer"
+              priority={true}
               src={user.photoURL}
               width="36"
               height="36"
